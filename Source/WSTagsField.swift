@@ -486,6 +486,7 @@ extension WSTagsField {
 
         let oldContentHeight: CGFloat = self.intrinsicContentHeight
         intrinsicContentHeight = max(totalHeight, curY + Constants.STANDARD_ROW_HEIGHT + Constants.VSPACE + padding.bottom)
+        
         invalidateIntrinsicContentSize()
 
         if oldContentHeight != self.intrinsicContentHeight {
@@ -511,6 +512,7 @@ extension WSTagsField {
             self.scrollRectToVisible(textField.frame, animated: false)
         }
         setNeedsDisplay()
+        frame.size.height = intrinsicContentHeight
     }
 
     fileprivate func updatePlaceholderTextVisibility() {

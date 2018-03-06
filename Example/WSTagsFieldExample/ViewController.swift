@@ -18,17 +18,18 @@ class ViewController: UIViewController {
         tagsField.frame = tagsView.bounds
         tagsView.addSubview(tagsField)
 
-        tagsField.placeholder = "Enter a tag"
+        tagsField.placeholder = "#Enter a tag"
         tagsField.placeholderColor = .red
         tagsField.backgroundColor = .lightGray
         tagsField.frame = tagsView.bounds
         tagsField.returnKeyType = .next
         tagsField.delimiter = " "
         tagsField.tagCornerRadius = 3.0
-
         tagsField.placeholderAlwayVisible = true
         tagsField.maxHeight = 100.0
+        self.tagsView.frame.size.height = 200
 
+        
         textFieldEventss()
     }
 
@@ -41,17 +42,17 @@ class ViewController: UIViewController {
         tagsField.frame = tagsView.bounds
     }
 
-    @IBAction func touchReadOnly(_ sender: UIButton) {
-        tagsField.readOnly = !tagsField.readOnly
-        sender.isSelected = tagsField.readOnly
-    }
-
-    @IBAction func touchTest(_ sender: UIButton) {
-        tagsField.addTag("test1")
-        tagsField.addTag("test2")
-        tagsField.addTag("test3")
-        tagsField.addTag("test4")
-    }
+//    @IBAction func touchReadOnly(_ sender: UIButton) {
+//        tagsField.readOnly = !tagsField.readOnly
+//        sender.isSelected = tagsField.readOnly
+//    }
+//
+//    @IBAction func touchTest(_ sender: UIButton) {
+//        tagsField.addTag("test1")
+//        tagsField.addTag("test2")
+//        tagsField.addTag("test3")
+//        tagsField.addTag("test4")
+//    }
 }
 
 extension ViewController {

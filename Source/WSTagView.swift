@@ -135,8 +135,10 @@ open class WSTagView: UIView {
     }
 
     open override func sizeThatFits(_ size: CGSize) -> CGSize {
+        
         let fittingSize = CGSize(width: size.width - 2.0 * Constants.TagViewXPadding,
                                  height: size.height - 2.0 * Constants.TagViewYPadding)
+        print(fittingSize,"fittingSize")
         let labelSize = textLabel.sizeThatFits(fittingSize)
         return CGSize(width: labelSize.width + 2.0 * Constants.TagViewXPadding,
                       height: labelSize.height + 2.0 * Constants.TagViewYPadding)
