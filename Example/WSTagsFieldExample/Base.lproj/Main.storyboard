@@ -21,13 +21,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OQ5-3f-lGx">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OQ5-3f-lGx">
                                 <rect key="frame" x="16" y="28" width="343" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OQ5-3f-lGx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="KsL-9i-xVA"/>
+                            <constraint firstAttribute="trailing" secondItem="OQ5-3f-lGx" secondAttribute="trailing" constant="16" id="Pmc-6J-aew"/>
+                            <constraint firstItem="OQ5-3f-lGx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="tnn-by-S1W"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OQ5-3f-lGx" secondAttribute="bottom" constant="595" id="wh9-UN-GAg"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="tagsView" destination="OQ5-3f-lGx" id="jd6-pi-b8v"/>

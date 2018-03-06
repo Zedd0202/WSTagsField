@@ -8,11 +8,6 @@
 
 import UIKit
 
-protocol BackspaceDetectingTextFieldDelegate: UITextFieldDelegate {
-    /// Notify whenever the backspace key is pressed
-    func textFieldDidDeleteBackwards(_ textField: UITextField)
-}
-
 class BackspaceDetectingTextField: UITextField {
 
     var onDeleteBackwards: (() -> Void)?
